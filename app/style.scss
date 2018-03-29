@@ -1,0 +1,132 @@
+@import "~normalize.css";
+
+footer {
+  background-color: #3b3530;
+  width: 100%;
+
+}
+
+.header {
+  height: 616px;
+  width: 100%;
+  background-image: url("/img/bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &-desc {
+    font-family: "PT Sans";
+    font-size: 20px;
+    text-shadow: 1px 0 1px white;
+  }
+
+  &-scroll-hint {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &-arrow {
+      margin-right: 10px;
+
+      svg {
+        height: 30px;
+        fill: #c62f00;
+      }
+    }
+
+    &-text {
+      font-family: "PT Sans Narrow";
+      font-size: 30px;
+      font-weight: bold;
+      color: #c62f00;
+    }
+  }
+
+  .ribbon {
+    position: relative;
+    width: 260px;
+    height: 64px;
+    background: linear-gradient(#941c00, #c62f00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: PT Sans Narrow;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      top: 64px;
+      left: 0;
+      border-left: 130px solid transparent;
+      border-right: 130px solid transparent;
+      border-top: 15px solid #c62f00;
+    }
+  }
+
+  .logo {
+    margin-top: 50px;
+  }
+}
+
+.form {
+  h2 {
+    font-family: serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &-desc {
+    font-family: "PT Sans";
+    font-size: 16px;
+
+  }
+}
+
+.category {
+
+  input {
+    width: 24px;
+    height: 24px;
+  }
+
+  &-item {
+    font-family: "PT Sans";
+    border-bottom: #ffe256 1px solid;
+    padding: 24px;
+    &-heading {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+
+
+.next-topic {
+  height: 40px;
+  width: 210px;
+  background-color: #a62300;
+  border: none;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+}
+
+
+
+.desc {
+    font-family: "PT Sans";
+  font-size: 16px;
+}
+
+.btn-link {
+  font-family: "PT Sans";
+  font-size: 20px;
+  background-color: white;
+}
+
