@@ -14,7 +14,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+    <script src="index.js"></script>
+    <script> function checkboxes() {
+        const inputElems = Array.from(document.querySelectorAll('.check-one'));
+
+        const checked = inputElems.map(x => x.checked);
+
+        console.log(checked);
+
+        const count = checked.length;
+
+        document.getElementById("count-one").innerHTML = count;
+    }
+    </script>
     <title>Imeline Ajalugu</title>
 </head>
 <body>
@@ -66,6 +78,7 @@
                                             Pingelised sündmused
                                         </button>
                                     </h5>
+                                    <span id="count-one"></span>
                                 </div>
                             </div>
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
@@ -584,12 +597,12 @@
     <div class="contact">
         <div class="row">
             <div class="col-11">
-                <button >
+                <button onclick="checkboxes()" >
                     Tutvu kampaania tingimustega
                 </button>
                 <br>
                 <p>
-                    Klienditeeninduse e-post: <a href="mailto:register@imelineajalugu.ee">register@imelineajalugu.ee</a>, tel: 667 0099 (tööpäeviti 9–17)
+                    Klienditeeninduse e-post: <a href="mailto:register@imelineajalugu.ee?Subject=Hello%20again" target="_top">register@imelineajalugu.ee</a>, tel: 667 0099 (tööpäeviti 9–17)
                 </p>
             </div>
         </div>

@@ -125,8 +125,21 @@ footer {
 }
 
 .btn-link {
+
   font-family: "PT Sans";
   font-size: 20px;
-  background-color: white;
+  background-color: #ffeb6b;
+  height: 61px;
+  width: 269px;
+
 }
 
+.card-header {
+  background-color: white;
+  border: none;
+}
+
+.card {
+  border: none;
+
+}
