@@ -1,10 +1,6 @@
 @import "~normalize.css";
 
-footer {
-  background-color: #3b3530;
-  width: 100%;
 
-}
 
 .header {
   height: 616px;
@@ -88,6 +84,8 @@ footer {
 
 .category {
 
+  border-bottom: #ffe256 1px solid;
+
   input {
     width: 24px;
     height: 24px;
@@ -125,13 +123,19 @@ footer {
 }
 
 .btn-link {
-
   font-family: "PT Sans";
   font-size: 20px;
+  color: #111111;
   background-color: #ffeb6b;
-  height: 61px;
+  height: 60px;
   width: 269px;
-
+  text-underline: none;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,.2),rgba(255,255,255,.2));
+  &:hover {
+    text-decoration: none;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.2),rgba(255,255,255,.2));
+    cursor: pointer;
+  }
 }
 
 .card-header {
@@ -142,4 +146,23 @@ footer {
 .card {
   border: none;
 
+}
+
+.btn-primary {
+  background: transparent;
+  border: none;
+  font-family: "Pt-Sans";
+}
+
+footer {
+  background-color: #3b3530;
+  width: 100%;
+  &.footer-text {
+    height: 140px;
+    display: table-cell;
+    font-family: pt_sansregular;
+    font-size: 21px;
+    vertical-align: middle;
+    color: #fff
+  }
 }
