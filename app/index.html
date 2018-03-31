@@ -2,6 +2,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.scss">
@@ -67,10 +69,8 @@
                                             Pingelised sündmused
                                         </button>
                                     </h5>
-                                    <span id="count-one"></span>
                                 </div>
                             </div>
-                            <div class="col-1"> 2/3</div>
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                  data-parent="#accordion">
                                 <div class="card-body">
@@ -567,14 +567,14 @@
                 </div>
             </div>
         </div>
-        <button class="d-block" style="margin: 0 auto" disabled>Valmis!</button>
+        <button class="d-block done" style="margin: 0 auto" disabled>Valmis!</button>
     </div>
     </div>
 </section>
 <div class="container">
     <div class="row">
-        <div class="col-7 desc">
-            Imeline Ajalugu on põhjamaade populaarseim ajalooajakiri, millel on Eestis üle 50 000 lugeja.
+        <div class="col-6 desc">
+            <em>Imeline Ajalugu</em> on põhjamaade populaarseim ajalooajakiri, millel on Eestis üle 50 000 lugeja.
             Ajakiri ilmub kord kuus, igas numbris on põnevad ja rikkalikult illustreeritud lood ligi 100
             leheküljel. Imelist Ajalugu annab Eestis välja AS Äripäev alates 2011 aasta sügisest.
         </div>
@@ -584,29 +584,41 @@
     </div>
 </div>
 <footer>
-    <div class="col-6">
+    <div class="content-wrapper">
         <div class="footer-text">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    Tutvu kampaania tingimustega
-                </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Kampaania tingimused</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Tutvu kampaania tingimustega
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Kampaania tingimused</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar non arcu sit amet
+                            consequat. Vivamus vestibulum facilisis nisl, a posuere ex mollis ac. Sed hendrerit non
+                            libero non maximus. Proin sagittis ex at mi aliquet, rhoncus dignissim tellus porttitor. Sed
+                            molestie eros sed mi dictum, vitae euismod velit vulputate. Vivamus nec odio porttitor,
+                            malesuada orci et, luctus turpis. Morbi nec porttitor ex. Cras nec justo velit. Quisque
+                            sodales lobortis lacus. Nulla eu semper nunc. Pellentesque facilisis, orci non molestie
+                            suscipit, ex quam suscipit enim, ornare tempor nisl lorem id nibh. Morbi ut ipsum sapien.
+                            Suspendisse potenti. Sed at ex eu justo consectetur varius convallis at quam. Pellentesque
+                            malesuada tincidunt lorem, scelerisque posuere leo vulputate id.
                         </div>
                     </div>
-                </div>                <br>
-                <p>
-                    Klienditeeninduse e-post: <a href="mailto:register@imelineajalugu.ee?Subject=Hello%20again" target="_top">register@imelineajalugu.ee</a>, tel: 667 0099 (tööpäeviti 9–17)
-                </p>
+                </div>
+            </div>
+            <br>
+            <p>
+                Klienditeeninduse e-post: <a href="mailto:register@imelineajalugu.ee?Subject=Hello%20again"
+                                             target="_top">register@imelineajalugu.ee</a>, tel: 667 0099 (tööpäeviti
+                9–17)
+            </p>
         </div>
     </div>
 </footer>
